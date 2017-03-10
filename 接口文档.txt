@@ -1,0 +1,158 @@
+接口规则 : host + '/api/' + baseurl + url
+
+host : http://139.196.209.6:3000/
+
+
+comment:
+	baseurl : /comment
+
+	发布评论
+		url: /post
+		method:post
+		data:
+			fid
+			uid
+			comments
+
+	翻页查询评论列表
+		url: /list/{fid}/{pageno}/{pagesize}
+		method:get
+
+feed:
+	baseurl : /feed
+
+	获取动态:
+		url:get/{id}
+		method:get
+	发布动态:
+		url:post/{id}
+		method:post
+		data:
+			uid
+			ftype
+			lng
+			lat
+			message
+			pic : String[]
+	翻页查询动态列表:
+		url:/list/{ftype}/{pageno}/{pagesize}
+		method:get,
+		data:(非必须)
+			uid
+			lng
+			lat
+	转发分享+1:
+		url:/forward/{fid}
+		method:post
+	喜欢+1:
+		url:/liked/{fid}
+		method:post
+mail:
+	baseurl : /mail
+
+	获取我发送的邮件:
+		url:/get/fromlist/{phone}
+		method:get
+	获取发送给我的邮件:
+		url:/get/tolist/{phone}
+		method:get
+	立刻发送:
+		url:/sendnow/{fromPhone}/{toPhone}
+		method:post
+		data
+			subject
+			content
+	计划发送:
+		url:/sendplan/{fromPhone}/{toPhone}
+		method:post
+		data
+			subject
+			content
+			dateTime
+	读取邮件
+		url:/read/{id}/{phone}
+		method:get
+
+penpal:
+	baseurl : /penpal
+
+	添加笔友:
+		url:/add/{phone}/{penpalphone}
+		method:get
+	删除笔友
+		url:/del/{phone}/{penpalphone}
+		method:get
+	笔友列表
+		url:/list/{phone}
+		method:get
+user:
+	baseurl: /user
+
+	获取用户
+		url:/get/{id}
+		method:get
+	验证用户
+		url:/valid/{phone}/{password}
+		method:get
+	注册第一步较验
+	    url:/valid/{phone}/{verifiCode}
+  		method:post
+	添加用户
+		url:/add/{phone}/{password}
+		method:get
+	修改密码
+		url:/password/change/{phone}
+		method:post
+	查询会员基础信息接口
+	  url:/get/info/{id}
+    method:get
+	修改头像
+		url:/modify/avatar/{id}
+		method:post
+		data:
+			pic (图片url)
+	修改笔名
+		url:/modify/nick/{id}
+		method:post
+		data
+			name
+	修改个性签名
+		url:/modify/signature/{id}
+		method:post
+		data
+			signature
+	修改性别+生日+星座
+		url:/modify/info/{id}
+		method:post
+		data
+			sex
+			birthday
+			sign
+	修改座标+状态+爱好
+		url:/modify/otherinfo/{id}
+		method:post
+		data
+			location
+			status
+			favorite
+	修改需求
+		url:/modify/needs/{id}
+		method:post
+		data
+			needs
+	修改邮编
+		url:/modify/postcode/{id}
+		method:post
+		data
+			postcode
+	Test add point
+		url:/test/point/{id}
+		method:post
+
+
+stamp:
+  获取列表
+    url:/list/{mobile}/{pageno}/{pagesize}
+    method:get
+
+

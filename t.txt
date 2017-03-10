@@ -1,0 +1,196 @@
+.
+├── index.html
+├── package.json
+├── README.md
+├── src
+│   ├── App.vue
+│   ├── components
+│   │   ├── conModal.vue
+│   │   ├── imgList.vue
+│   │   ├── modal.vue
+│   │   ├── test.vue
+│   │   └── vue.core.image.upload.vue
+│   ├── main.js
+│   ├── route-config.js
+│   ├── source
+│   │   ├── css
+│   │   │   ├── areadialog.css
+│   │   │   ├── cd.css
+│   │   │   ├── components
+│   │   │   │   ├── badge.css
+│   │   │   │   ├── button.css
+│   │   │   │   ├── card.css
+│   │   │   │   ├── chat.css
+│   │   │   │   ├── dialog.css
+│   │   │   │   ├── font-face.css
+│   │   │   │   ├── form.css
+│   │   │   │   ├── grid.css
+│   │   │   │   ├── header-bar.css
+│   │   │   │   ├── nav.css
+│   │   │   │   ├── slider.css
+│   │   │   │   └── user-list.css
+│   │   │   ├── config.css
+│   │   │   ├── footer.css
+│   │   │   ├── hmc.css
+│   │   │   ├── icon-hmc.css
+│   │   │   ├── LCalendar.css
+│   │   │   ├── main.css
+│   │   │   ├── mobile-select-area.css
+│   │   │   ├── mxl.css
+│   │   │   ├── reset.css
+│   │   │   ├── sort.css
+│   │   │   ├── swiper.min.css
+│   │   │   ├── ytui.css
+│   │   │   ├── zepto.mdatetimer.css
+│   │   │   └── zepto.mdatetimer-hmc.css
+│   │   ├── font
+│   │   │   └── iconfont.ttf
+│   │   ├── images
+│   │   │   ├── 1.png
+│   │   │   ├── bg-ci-tags.png
+│   │   │   ├── bg-envelope.png
+│   │   │   ├── bg-img-avatar.png
+│   │   │   ├── bg-img-blank.png
+│   │   │   ├── bg-img-network-busy.png
+│   │   │   ├── bg-pub-upload-img-list-li.png
+│   │   │   ├── bg-stamp-collecting-list-li-img-wrap.png
+│   │   │   ├── bg-yc.png
+│   │   │   ├── by-photo.png
+│   │   │   ├── dialog-num.png
+│   │   │   ├── dialog-num.svg
+│   │   │   ├── dialog-success-btn.svg
+│   │   │   ├── dx-checkbox-h.png
+│   │   │   ├── dx-checkbox.png
+│   │   │   ├── dx-icon-eye-no-1.png
+│   │   │   ├── dx-icon-eye-no.png
+│   │   │   ├── dx-icon-eye.png
+│   │   │   ├── dx-icon-select-h.png
+│   │   │   ├── dx-icon-select-h.svg
+│   │   │   ├── dx-icon-select-n.png
+│   │   │   ├── dx-icon-select-n.svg
+│   │   │   ├── dx-photo.png
+│   │   │   ├── footer-icon01-h.png
+│   │   │   ├── footer-icon01.png
+│   │   │   ├── footer-icon02-h.png
+│   │   │   ├── footer-icon02.png
+│   │   │   ├── footer-icon03-h.png
+│   │   │   ├── footer-icon03.png
+│   │   │   ├── footer-icon04-h.png
+│   │   │   ├── footer-icon04.png
+│   │   │   ├── footer-icon05-h.png
+│   │   │   ├── footer-icon05.png
+│   │   │   ├── guid-logo.png
+│   │   │   ├── guid-page.jpg
+│   │   │   ├── icon-comment-a-hmc.png
+│   │   │   ├── icon-comment-hmc.png
+│   │   │   ├── icon-del-hmc.png
+│   │   │   ├── icon-dialog-warning.png
+│   │   │   ├── icon-emoji-hmc.png
+│   │   │   ├── iconfont-dianhua.png
+│   │   │   ├── iconfont-dui.png
+│   │   │   ├── iconfont-iconfontweibo.png
+│   │   │   ├── iconfont-qq.png
+│   │   │   ├── iconfont-weixin.png
+│   │   │   ├── icon-globe.png
+│   │   │   ├── icon-lock.png
+│   │   │   ├── icon-personal-li1.png
+│   │   │   ├── icon-personal-li2.png
+│   │   │   ├── icon-personal-li3.png
+│   │   │   ├── icon-personal-li4.png
+│   │   │   ├── icon-personal-li5.png
+│   │   │   ├── icon-phone.png
+│   │   │   ├── icon-select-down.svg
+│   │   │   ├── icon-select-next.svg
+│   │   │   ├── icon-share-a-hmc.png
+│   │   │   ├── icon-share-hmc.png
+│   │   │   ├── icon-sns-qq-hmc_1.png
+│   │   │   ├── icon-sns-qq-hmc.png
+│   │   │   ├── icon-sns-wechat-hmc_1.png
+│   │   │   ├── icon-sns-wechat-hmc.png
+│   │   │   ├── icon-sns-weibo-hmc_1.png
+│   │   │   ├── icon-sns-weibo-hmc.png
+│   │   │   ├── icon-zan-a-hmc.png
+│   │   │   ├── icon-zan-hmc.png
+│   │   │   ├── img-stamp-collecting-list-li.png
+│   │   │   ├── mail.jpg
+│   │   │   └── meinv.jpg
+│   │   └── js
+│   │       ├── data.json
+│   │       ├── dialog.js
+│   │       ├── html-size-calculation.js
+│   │       ├── jquery-2.1.0.js
+│   │       ├── LCalendar.js
+│   │       ├── mobile-select-area.js
+│   │       ├── swiper.min.js
+│   │       ├── ytui.js
+│   │       ├── zepto.mdatetimer.js
+│   │       └── zepto.min.js
+│   └── views
+│       ├── account.vue
+│       ├── acquaintances.vue
+│       ├── actAll.vue
+│       ├── admin.vue
+│       ├── allLetter.vue
+│       ├── application.vue
+│       ├── collection.vue
+│       ├── comment.vue
+│       ├── denied.vue
+│       ├── dynamics.vue
+│       ├── fedback.vue
+│       ├── findingIndex.vue
+│       ├── findingKnow.vue
+│       ├── findingResult.vue
+│       ├── findingSetting.vue
+│       ├── finding.vue
+│       ├── invited.vue
+│       ├── login.vue
+│       ├── mail.vue
+│       ├── myDynamics.vue
+│       ├── myNumerical.vue
+│       ├── penpal.vue
+│       ├── personalcenter.vue
+│       ├── personalSign.vue
+│       ├── pullLetter.vue
+│       ├── readLetter.vue
+│       ├── register.vue
+│       ├── repsd.vue
+│       ├── reset.vue
+│       ├── sendAct.vue
+│       ├── sendLetter.vue
+│       ├── setAge.vue
+│       ├── setAnarchy.vue
+│       ├── setDistances.vue
+│       ├── setHead.vue
+│       ├── setHobby.vue
+│       ├── setName.vue
+│       ├── setPersonal.vue
+│       ├── setpsd.vue
+│       ├── setSex.vue
+│       ├── setting.vue
+│       ├── setZodiac.vue
+│       ├── share.vue
+│       ├── updates.vue
+│       ├── userAgreement.vue
+│       ├── userAnarchy.vue
+│       ├── userIndex.vue
+│       ├── userinfo.vue
+│       ├── userLove.vue
+│       ├── userName.vue
+│       ├── userNeed.vue
+│       ├── userNum.vue
+│       ├── userPhoto.vue
+│       ├── userSex.vue
+│       ├── userSignature.vue
+│       ├── userStuAnarcha.vue
+│       ├── user.vue
+│       ├── userZodiac.vue
+│       └── writeLetter.vue
+├── static
+│   └── build.js
+├── t.txt
+├── webpack.config.js
+├── \346\216\245\345\217\243\346\226\207\346\241\243.txt
+├── \351\227\256\351\242\230\351\233\206.txt
+└── \351\241\271\347\233\256\346\225\264\344\275\223\350\277\233\345\272\246\347\212\266\346\200\201.xls
+
+10 directories, 183 files

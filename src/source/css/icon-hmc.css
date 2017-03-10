@@ -1,0 +1,85 @@
+.icon-hi {
+  display: block;
+  background-position: center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon-personal-li1 {
+  background-image: url("../images/icon-personal-li1.png");
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.icon-personal-li2 {
+  background-image: url("../images/icon-personal-li2.png");
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.icon-personal-li3 {
+  background-image: url("../images/icon-personal-li3.png");
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.icon-personal-li4 {
+  background-image: url("../images/icon-personal-li4.png");
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.icon-personal-li5 {
+  background-image: url("../images/icon-personal-li5.png");
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.icon-del-hmc {
+  background-image: url("../images/icon-del-hmc.png");
+  width: 1.01333rem;
+  height: 1.01333rem;
+}
+
+.icon-share-hmc {
+  background-image: url("../images/icon-share-hmc.png");
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.active .icon-share-hmc {
+  background-image: url("../images/icon-share-a-hmc.png");
+}
+
+.icon-zan-hmc {
+  background-image: url("../images/icon-zan-hmc.png");
+  width: 0.85333rem;
+  height: 0.8rem;
+}
+
+.active .icon-zan-hmc {
+  background-image: url("../images/icon-zan-a-hmc.png");
+}
+
+.icon-comment-hmc {
+  background-image: url("../images/icon-comment-hmc.png");
+  width: 0.90667rem;
+  height: 0.8rem;
+}
+
+.active .icon-comment-hmc {
+  background-image: url("../images/icon-comment-a-hmc.png");
+}
+
+.icon-emoji-hmc {
+  background-image: url(../images/icon-emoji-hmc.png);
+  width: 1.06667rem;
+  height: 1.06667rem;
+}
+
+.icon-dialog-warning {
+  background-image: url(../images/icon-dialog-warning.png) !important;
+  width: 2.66667rem;
+  height: 2.66667rem;
+}

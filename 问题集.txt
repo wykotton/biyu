@@ -1,0 +1,114 @@
+	修改性别+生日+星座
+		url:/modify/info/{id}
+		method:post
+		data
+			sex
+			birthday
+			sign
+	修改座标+状态+爱好
+		url:/modify/otherinfo/{id}
+		method:post
+		data
+			location
+			status
+			favorite
+
+
+这两个接口分开一下，分成六个
+
+sex | birthday | sign | location | status | favorite
+
+/************分割线**************/
+
+需要个“回复评论”的接口
+api/feed/list
+返回数据里面 差是否关注  islike
+islike =>  1:关注, 0:未关注
+
+/************分割线**************/
+
+feed/get
+comment/list
+
+需要返回头像字段
+
+/************分割线**************/
+
+feed/get  需要返回评论的总数 
+
+/************BUG：分割线**************/
+
+api/comment/list/20/0/10
+api/comment/list/20/1/10
+
+查出的数据有重叠的
+
+/************分割线**************/
+
+feed/post 发布动态接口
+提交数据接口的IMG 类型：string
+
+ftype:1
+message:"动态内容"
+imgs:'[{"src":"imgs/cb3ed76b6fa45a51509d66c2573d7bc3.jpg"},{"src":"imgs/2cb6e703512fa6ec36ffd3a4a76a5732.jpg"}]'
+
+/************分割线**************/
+
+feed/list 获取动态列表
+
+返回数据中 data数组列表中 字段pic 有问题，
+
+估计是之前采用的图片是base64  现在存的是图片URL地址
+
+顺便检查一下分页 看是不是有 前面数据重叠问题
+
+/************分割线 bug**************/
+
+penpal/search 找笔友匹配接口
+
+调用之后 可匹配次数 没有减少
+
+/************分割线 bug**************/
+
+penpal/get
+这个接口返回没有变化 是假数据吗？
+
+/************分割线 bug**************/
+
+写信接口 需要支持通过昵称 查找（说明用户昵称nickname不允许重复）
+可以修改 get/info/ 以支持该需求
+
+/************分割线 bug**************/
+
+get/fromlist
+已发送的邮件 缺少 待查看&已查看 的状态。
+
+
+/************分割线 bug**************/
+
+发信接口 ：mail/get/fromlist  
+收信接口 ：mail/get/tolist
+
+目前有 fromPhone 和 toPhone
+
+希望把  formName 和 toName | formAddrss 和 toAddrss 加上避免多次查询
+
+接口缺少邮戳的图片地址字段，以及分页查询（分页可后面考虑，目前应急全部返回即可）
+
+/************分割线 bug**************/
+
+/user/valid
+
+验证用户 提交的2个参数分别是什么？
+返回的都是假数据
+
+
+
+
+
+
+
+
+
+
+
